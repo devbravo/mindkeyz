@@ -1,0 +1,18 @@
+.navigation {
+  h3 {
+    font-size: 2rem;
+    font-family: 'xirod';
+    text-transform: uppercase;
+    color: $color-secondary;
+  }
+}
+
+.nav {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__list--link {
+    letter-spacing: 0.01rem;
+  }
+}
