@@ -1,115 +1,79 @@
-// .navigation {
-//   //background-color: orangered;
-//   grid-column: 1 / -1;
-//   grid-row: 1 / 2;
-//   padding: 3rem;
-
-//   display: grid;
-//   grid-template-columns: max-content minmax(min-content, max-content) min-content;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 3rem;
-
-//   &__nav {
-//     font-size: 2rem;
-//     text-transform: uppercase;
-//     font-weight: bold;
-
-//     display: grid;
-//     grid-template-columns: repeat(7, max-content);
-//     gap: 3rem;
-
-//     & > * {
-//       list-style: none;
-//     }
-
-//     // &--list {
-//     //   margin-left: 3rem;
-//     // }
-
-//     &--list--link {
-//       text-decoration: none;
-//       letter-spacing: 0.03rem;
-//       color: $color-secondary;
-//     }
-//   }
-
-//   &__social {
-//     width: 10rem;
-//     height: auto;
-//     fill: $color-primary;
-
-//     // display: flex;
-//     // flex-direction: column;
-
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     gap: 1rem;
-//     //justify-items: center;
-//     align-content: center;
-
-//     &--links {
-//       align-items: center;
-//     }
-//   }
-// }
-
+// HEADER CONTAINER
 .navigation {
-  //background-color: orangered;
-  padding: 6rem;
+  padding: 5rem;
   grid-area: 1 / 1 / span 1 / -1;
   display: flex;
   justify-content: center;
+}
 
-  h3 {
+// MINDKEYZ LOGO
+.mindkeyz {
+  text-decoration: none;
+
+  &__header {
     color: $color-secondary;
     margin-right: 20rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
 
-    &:hover {
-      color: $color-primary;
-    }
+  &__header:link,
+  &__header:visited {
+    color: $color-secondary;
+  }
+
+  &__header:hover,
+  &__header:active {
+    color: $color-primary-dark;
+    transform: scale(1.15, 1.15);
   }
 }
 
-.mindkeyz {
-  text-decoration: none;
-}
-
+// MAIN NAVIGATION
 .nav {
   list-style: none;
 
   display: flex;
   justify-content: center;
-
-  &__list {
-    //display: flex;
-  }
+  align-items: center;
 
   &__list--link {
     text-decoration: none;
+    margin: 0 2rem 0 2rem;
     color: $color-secondary;
-    margin: 0 2.5rem 0 2.5rem;
+  }
 
-    &:hover {
-      color: $color-primary;
-    }
+  &__list--link:link,
+  &__list--link:visited {
+    //padding: 0.4rem 0px;
+    //border-bottom-style: 2px solid transparent;
 
+    &:hover,
     &:active {
-      color: #fff;
+      color: $color-primary-dark;
+      //border-bottom: 2px solid $color-secondary;
     }
   }
 }
 
+// SOCIAL ICONS
 .social {
   display: flex;
-  //grid-template-columns: repeat(3, 1fr);
-
   align-items: center;
-  gap: 1.25rem;
   margin-left: 20rem;
+  transition: fill 0.5s;
 
   &__links {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__icons:hover,
+  &__icons:active {
+    fill: $color-primary-dark;
   }
 }

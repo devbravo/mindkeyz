@@ -1,11 +1,12 @@
 // COLOR VARIABLES
 
-$color-primary: rgb(237, 30, 144);
+$color-primary-dark: rgb(237, 30, 144);
+$color-primary-light: rgb(185, 45, 122);
 $color-secondary: #333333;
 $color-tertiary: rgba(245, 245, 245);
 
 // FONT VARIABLES
-$font-primary: 'Roboto Condensed', Helvetica, Arial, Verdana, sans-serif;
+//$font-primary: 'Roboto Condensed', Helvetica, Arial, Verdana, sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
 // /* ---- GLOBAL RESET ---- */
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto condensed';
+  //font-family: 'Roboto condensed';
   color: --color-tertiary;
   font-weight: 300;
   line-height: 1.6;

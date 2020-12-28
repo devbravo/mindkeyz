@@ -1,0 +1,10 @@
+@mixin textgradient {
+  background-image: linear-gradient(
+    to top left,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

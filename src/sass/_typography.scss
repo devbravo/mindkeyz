@@ -1,15 +1,13 @@
-.navigation {
-  h3 {
-    font-size: 2rem;
-    font-family: 'xirod';
-    text-transform: uppercase;
-    color: $color-secondary;
-  }
+.mindkeyz__header {
+  font-family: 'Xirod';
+  font-weight: lighter;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 .nav {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.7rem;
+  font-weight: 600;
   text-transform: uppercase;
 
   &__list--link {
