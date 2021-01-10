@@ -1,16 +1,32 @@
 .mindkeyz__header {
   font-family: 'Xirod';
   font-weight: lighter;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
 }
 
 .nav {
-  font-size: 1.7rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 700;
   text-transform: uppercase;
 
   &__list--link {
     letter-spacing: 0.01rem;
+  }
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+
+  &__text {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
   }
 }

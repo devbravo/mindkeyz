@@ -1,9 +1,9 @@
 // COLOR VARIABLES
 
-$color-primary-dark: rgb(237, 30, 144);
-$color-primary-light: rgb(185, 45, 122);
-$color-secondary: #333333;
-$color-tertiary: rgba(245, 245, 245);
+$color-primary-light: rgb(8, 7, 7);
+$color-primary-dark: rgb(0, 0, 0);
+$color-secondary: #fff;
+$color-tertiary: rgb(0, 0, 0);
 
 // FONT VARIABLES
 //$font-primary: 'Roboto Condensed', Helvetica, Arial, Verdana, sans-serif;
@@ -25,13 +25,13 @@ html {
 
 body {
   //font-family: 'Roboto condensed';
-  color: --color-tertiary;
+  color: --color-secondary;
   font-weight: 300;
   line-height: 1.6;
 }
 
 .App {
   display: grid;
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: [navbar-start] 1fr [navbar-end header-start] 8fr [header-end];
   grid-template-columns: repeat(5, 1fr);
 }

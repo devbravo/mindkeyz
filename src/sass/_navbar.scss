@@ -1,9 +1,9 @@
 // HEADER CONTAINER
 .navigation {
-  padding: 5rem;
+  padding: 3rem;
   grid-area: 1 / 1 / span 1 / -1;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 // MINDKEYZ LOGO
@@ -12,9 +12,9 @@
 
   &__header {
     color: $color-secondary;
-    margin-right: 20rem;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    margin-left: -20rem;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
 
   &__header:link,
@@ -24,7 +24,7 @@
 
   &__header:hover,
   &__header:active {
-    color: $color-primary-dark;
+    //color: $color-tertiary;
     transform: scale(1.15, 1.15);
   }
 }
@@ -36,22 +36,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -9rem;
 
   &__list--link {
     text-decoration: none;
-    margin: 0 2rem 0 2rem;
+    margin: 0 1.5rem 0 1.5rem;
     color: $color-secondary;
   }
 
   &__list--link:link,
   &__list--link:visited {
-    //padding: 0.4rem 0px;
-    //border-bottom-style: 2px solid transparent;
+    padding: 0.7rem 0px;
+    border-bottom-style: 3px solid transparent;
 
     &:hover,
     &:active {
-      color: $color-primary-dark;
-      //border-bottom: 2px solid $color-secondary;
+      //color: $color-tertiary;
+      border-bottom: 3px solid $color-primary-dark;
     }
   }
 }
@@ -60,12 +61,15 @@
 .social {
   display: flex;
   align-items: center;
-  margin-left: 20rem;
-  transition: fill 0.5s;
+  margin-right: -20rem;
+
+  &__icons {
+    transition: transform 0.4s;
+  }
 
   &__links {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
 
     &:not(:last-child) {
       margin-right: 1rem;
@@ -74,6 +78,7 @@
 
   &__icons:hover,
   &__icons:active {
-    fill: $color-primary-dark;
+    transform: scale(1.2, 1.2);
+    //fill: $color-primary-dark;
   }
 }
