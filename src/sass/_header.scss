@@ -2,8 +2,8 @@
   grid-row: 1 / header-end;
   grid-column: 1 / -1;
   background-image: linear-gradient(
-      rgba($color-primary-light, 0.7),
-      rgba($color-primary-dark, 0.7)
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-dark, 0.5)
     ),
     url(../images/home_studio.jpg);
   background-size: cover;
@@ -13,19 +13,31 @@
   // top: -10rem;
 
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 25rem;
+  backface-visibility: hidden;
+
+  position: relative;
 
   &__text {
     grid-row: 2 / span 1;
     color: $color-secondary;
 
     text-align: center;
-    margin-top: -10rem;
+    //margin-top: -10rem;
   }
+
   &__text--h1 {
     margin-bottom: 0.5rem;
+    animation: moveInLeft 1.5s ease-out;
   }
 
   &__text--h2 {
+    animation: moveInRight 1.5s ease-out;
+  }
+
+  &__btn--animated {
+    position: absolute;
+    top: 50%;
+    left: 43%;
   }
 }
