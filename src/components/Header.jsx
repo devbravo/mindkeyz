@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 
 const Header = () => {
-  const link = 'https://www.airbit.com';
+  const link = 'https://airbit.com/widgets/html5?uid=67484&config=319962';
   return (
     <div className='header'>
       <div className='header__text'>
@@ -13,9 +13,7 @@ const Header = () => {
           We provide the keys to your musical mind
         </h2>
       </div>
-      <div>
-        <Button send={link} className='btn header__btn--animated' />
-      </div>
+      <Button send={link} />
     </div>
   );
 };

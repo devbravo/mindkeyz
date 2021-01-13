@@ -1,7 +1,11 @@
 import React from 'react';
-import { InstagramWithCircle } from '@styled-icons/entypo-social/InstagramWithCircle';
-import { YoutubeWithCircle } from '@styled-icons/entypo-social/YoutubeWithCircle';
-import { FacebookWithCircle } from '@styled-icons/entypo-social/FacebookWithCircle';
+//import { InstagramWithCircle } from '@styled-icons/entypo-social/InstagramWithCircle';
+import { SocialInstagramCircular } from '@styled-icons/typicons/SocialInstagramCircular';
+//import { YoutubeWithCircle } from '@styled-icons/entypo-social/YoutubeWithCircle';
+import { SocialYoutubeCircular } from '@styled-icons/typicons/SocialYoutubeCircular';
+//import { Facebook } from '@styled-icons/bootstrap/Facebook';
+import { SocialFacebookCircular } from '@styled-icons/typicons/SocialFacebookCircular';
+
 // import { Facebook } from '@styled-icons/material-outlined/Facebook';
 //import { Facebook } from '@styled-icons/bootstrap/Facebook';
 // import { logo1 } from '../../images/iconfinder_Circled_Youtube_svg_5279120.svg';
@@ -13,19 +17,27 @@ const SocialIcons = () => {
     <div className='social'>
       <a
         href='https://www.youtube.com/channel/UC9jdJsG9Mlgf4g2dpogDQsQ'
+        target='_blank'
+        rel='noreferrer'
         className='social__links'>
         {/* <img src={logo1} alt='youtube logo' className='youtube' /> */}
-        <YoutubeWithCircle fill='#fff' className='social__icons' />
+        <SocialYoutubeCircular fill='#fff' className='social__icons' />
       </a>
       <a
         href='https://www.instagram.com/mindkeyz/?hl=en'
+        target='_blank'
+        rel='noreferrer'
         className='social__links'>
         {/* <img src={logo2} alt='instagram logo' className='instagram' /> */}
-        <InstagramWithCircle fill='#fff' className='social__icons' />
+        <SocialInstagramCircular fill='#fff' className='social__icons' />
       </a>
-      <a href='https://www.facebook.com/Mindkeyz/' className='social__links'>
+      <a
+        href='https://www.facebook.com/Mindkeyz/'
+        target='_blank'
+        rel='noreferrer'
+        className='social__links'>
         {/* <img src={logo3} alt='facebook logo' className='facebook' /> */}
-        <FacebookWithCircle fill='#fff' className='social__icons' />
+        <SocialFacebookCircular fill='#fff' className='social__icons' />
       </a>
     </div>
   );

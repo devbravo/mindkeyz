@@ -2,12 +2,14 @@ import { Cart } from '@styled-icons/boxicons-regular/Cart';
 
 const Button = ({ send, className }) => {
   return (
-    <div className='header__btn-cart'>
-      <a role='button' href='/#' className={className}>
-        Beatstore
-        {/* <Cart fill='#777' className='cart' /> */}
-      </a>
-    </div>
+    <a
+      href={send}
+      target='_blank'
+      rel='noreferrer'
+      className='btn header__btn--animated btn-white'>
+      beatstore
+      {/* <Cart fill='#777' className='cart' /> */}
+    </a>
   );
 };
 
