@@ -1,13 +1,14 @@
 // COLOR VARIABLES
 
-$color-primary-light: rgb(8, 7, 7);
-$color-primary-dark: rgb(0, 0, 0);
+$color-primary-light: rgb(121, 38, 255);
+$color-primary-light2: rgb(167, 112, 255);
+$color-primary-dark: rgb(102, 0, 255);
 $color-secondary: #fff;
 $color-tertiary: rgb(0, 0, 0);
 
 // FONT VARIABLES
 //$font-primary: 'Roboto Condensed', Helvetica, Arial, Verdana, sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-display: 'Open Sans', 'Josefin Sans', sans-serif;
 
 // /* ---- GLOBAL RESET ---- */
 *,
@@ -24,14 +25,14 @@ html {
 }
 
 body {
-  //font-family: 'Roboto condensed';
+  font-family: $font-display;
   color: $color-secondary;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.6;
 }
 
 .App {
   display: grid;
-  grid-template-rows: [navbar-start] 1fr [navbar-end header-start] 8fr [header-end];
+  grid-template-rows: [navbar-start] 1fr [navbar-end header-start] 83rem [header-end] 30rem 30rem;
   grid-template-columns: repeat(5, 1fr);
 }

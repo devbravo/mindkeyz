@@ -1,7 +1,7 @@
 //import React, { useState } from 'react';
 
 const NavLinks = () => {
-  const links = ['Buy Beats', 'Licensing', 'Services'];
+  const links = ['Buy Beats', 'Licensing', 'Services', 'About'];
 
   return (
     <nav>

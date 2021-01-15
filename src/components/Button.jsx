@@ -1,15 +1,17 @@
-import { Cart } from '@styled-icons/boxicons-regular/Cart';
+import { ShoppingCart } from '@styled-icons/fa-solid/ShoppingCart';
 
 const Button = ({ send, className }) => {
   return (
-    <a
-      href={send}
-      target='_blank'
-      rel='noreferrer'
-      className='btn header__btn--animated btn-white'>
-      beatstore
-      {/* <Cart fill='#777' className='cart' /> */}
-    </a>
+    <div className='btn-cart'>
+      <a
+        href={send}
+        target='_blank'
+        rel='noreferrer'
+        className='btn header__btn--animated btn-white btn-cart__beatstore'>
+        beatstore
+        <ShoppingCart className='btn-cart__cart' />
+      </a>
+    </div>
   );
 };
 

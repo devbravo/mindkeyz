@@ -1,42 +1,30 @@
 .header {
-  grid-row: 1 / header-end;
+  grid-row: 2 / span 1;
   grid-column: 1 / -1;
   background-image: linear-gradient(
-      rgba($color-primary-light, 0.5),
-      rgba($color-primary-dark, 0.5)
+      rgba($color-primary-dark, 0.6),
+      rgba($color-tertiary, 0.8)
     ),
-    url(../images/home_studio.jpg);
+    url(../images/splash_studio.jpg);
   background-size: cover;
   background-position: center;
+  margin-top: 0rem;
 
-  // position: relative;
-  // top: -10rem;
-
-  display: grid;
-  grid-template-rows: 25rem;
   backface-visibility: hidden;
 
-  position: relative;
-
-  &__text {
-    grid-row: 2 / span 1;
+  &__text-button {
     color: $color-secondary;
     text-align: center;
-    //margin-top: -10rem;
+
+    margin-top: 30rem;
   }
 
   &__text--h1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     animation: moveInLeft 1.5s ease-out;
   }
 
   &__text--h2 {
     animation: moveInRight 1.5s ease-out;
-  }
-
-  &__btn--animated {
-    position: absolute;
-    top: 50%;
-    left: 43%;
   }
 }
