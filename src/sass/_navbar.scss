@@ -1,5 +1,5 @@
 // HEADER CONTAINER
-.navigation {
+.navbar {
   position: fixed;
   width: 100%;
   top: 0;
@@ -10,6 +10,10 @@
   justify-content: space-evenly;
 
   z-index: 10;
+}
+
+.navbar.active {
+  background-color: $color-tertiary;
 }
 
 // MINDKEYZ LOGO

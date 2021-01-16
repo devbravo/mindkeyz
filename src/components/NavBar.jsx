@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavLinks from './NavLinks';
 import SocialIcons from './SocialIcons';
 
-const NavBar = () => {
+const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeNavBackground = () => {
+    if (window.scrollY >= 200) setNavbar(true);
+    else setNavbar(false);
+  };
+
+  window.addEventListener('scroll', changeNavBackground);
+
   return (
-    <div className='navigation'>
+    <nav className={navbar ? 'navbar active' : 'navbar'}>
       <div>
         <a href='www.mindkeyz.com' className='mindkeyz'>
           <h3 className='mindkeyz__header'>MINDKEYZ</h3>
@@ -13,8 +22,8 @@ const NavBar = () => {
       {/* <img src='' alt='' className='navbar__mindkeyz-logo' /> */}
       <NavLinks />
       <SocialIcons />
-    </div>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
