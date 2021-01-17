@@ -2,14 +2,14 @@ import { ShoppingCart } from '@styled-icons/fa-solid/ShoppingCart';
 
 const Button = ({ send, className }) => {
   return (
-    <div className='btn-cart'>
+    <div className='btn-beatstoreCart'>
       <a
         href={send}
         target='_blank'
         rel='noreferrer'
-        className='btn header__btn--animated btn-white btn-cart__beatstore'>
+        className='btn btn--white btn--animated btn-storeCart__beatstore'>
         beatstore
-        <ShoppingCart className='btn-cart__cart' />
+        <ShoppingCart className='btn-storeCart__cart' />
       </a>
     </div>
   );

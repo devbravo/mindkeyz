@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 
 const Header = () => {
-  const link = 'https://airbit.com/widgets/html5?uid=67484&config=319962';
+  const link = 'https://airbit.com/';
   return (
     <div className='header'>
       <div className='header__text-button'>

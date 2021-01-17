@@ -6,11 +6,13 @@
     text-decoration: none;
     padding: 1.2rem 2.8rem;
     display: inline-block;
-    border: none;
     border-radius: 10rem;
-    cursor: pointer !important;
+    font-size: 1.6rem;
     font-weight: 700;
+    position: relative;
 
+    border: none;
+    cursor: pointer;
     transition: all 0.2s;
   }
 
@@ -29,46 +31,36 @@
     transform: translateY(1px);
     box-shadow: 0.5rem 0.8rem 1rem rgba($color-tertiary, 0.3);
   }
+
+  &--white {
+    background-color: $color-secondary;
+    color: #777;
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.8s ease-out 0.5s;
+    animation-fill-mode: backwards;
+  }
 }
 
-.header__btn--animated {
-  margin-top: 3rem;
-  font-size: 1.6rem;
-  background-color: $color-secondary;
-  color: #777;
-  text-align: end;
-  animation: moveInBottom 0.5s ease-out 0.5s;
-  animation-fill-mode: backwards;
-}
-
-.btn-white {
-  background-color: $color-secondary;
-  color: #777;
-}
-
-.btn::after {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
-.btn-white::after {
-  background-color: $color-secondary;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn-cart {
+.btn-storeCart {
   &__beatstore {
     font-size: 1.7rem;
   }

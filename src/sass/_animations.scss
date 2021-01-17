@@ -49,3 +49,12 @@
     transform: translate(0);
   }
 }
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-10rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}

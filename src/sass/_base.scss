@@ -33,6 +33,6 @@ body {
 
 .App {
   display: grid;
-  grid-template-rows: [navbar-start] 1fr [navbar-end header-start] 83rem [header-end] 30rem 30rem;
+  grid-template-rows: [navbar-start] 1fr [navbar-end header-start] 83rem [header-end] 34rem 30rem;
   grid-template-columns: repeat(5, 1fr);
 }

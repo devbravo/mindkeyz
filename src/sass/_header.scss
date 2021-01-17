@@ -2,8 +2,8 @@
   grid-row: 2 / span 1;
   grid-column: 1 / -1;
   background-image: linear-gradient(
-      rgba($color-primary-dark, 0.6),
-      rgba($color-tertiary, 0.8)
+      rgba($color-primary-dark, 0.4),
+      rgba($color-tertiary, 0.6)
     ),
     url(../images/splash_studio.jpg);
   background-size: cover;
@@ -26,5 +26,6 @@
 
   &__text--h2 {
     animation: moveInRight 1.5s ease-out;
+    margin-bottom: 3.5rem;
   }
 }

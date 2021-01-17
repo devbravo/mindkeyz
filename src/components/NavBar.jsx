@@ -6,8 +6,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeNavBackground = () => {
-    if (window.scrollY >= 200) setNavbar(true);
-    else setNavbar(false);
+    window.scrollY >= 230 ? setNavbar(true) : setNavbar(false);
   };
 
   window.addEventListener('scroll', changeNavBackground);
