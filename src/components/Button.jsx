@@ -8,7 +8,7 @@ const Button = ({ send, className }) => {
         target='_blank'
         rel='noreferrer'
         className='btn btn--white btn--animated btn-storeCart__beatstore'>
-        beatstore
+        buy beats
         <ShoppingCart className='btn-storeCart__cart' />
       </a>
     </div>

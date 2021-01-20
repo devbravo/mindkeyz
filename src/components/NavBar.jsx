@@ -12,16 +12,13 @@ const Navbar = () => {
   window.addEventListener('scroll', changeNavBackground);
 
   return (
-    <nav className={navbar ? 'navbar active' : 'navbar'}>
-      <div>
-        <a href='www.mindkeyz.com' className='mindkeyz'>
-          <h3 className='mindkeyz__header'>MINDKEYZ</h3>
-        </a>
-      </div>
-      {/* <img src='' alt='' className='navbar__mindkeyz-logo' /> */}
+    <div className={navbar ? 'navbar active' : 'navbar'}>
+      <a href='www.mindkeyz.com' className='mindkeyz'>
+        <h3 className='mindkeyz__header'>MINDKEYZ</h3>
+      </a>
       <NavLinks />
       <SocialIcons />
-    </nav>
+    </div>
   );
 };
 

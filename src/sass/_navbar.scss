@@ -4,7 +4,8 @@
   width: 100%;
   top: 0;
   left: 0;
-  padding: 2.8rem;
+  padding: 2rem 2.8rem 2rem 2.8rem;
+
   grid-area: 1 / 1 / span 1 / -1;
   display: flex;
   justify-content: space-evenly;
@@ -21,10 +22,11 @@
 // MINDKEYZ LOGO
 .mindkeyz {
   text-decoration: none;
+  padding: 0.8rem;
 
   &__header {
     color: $color-secondary;
-    margin-left: -20rem;
+    margin-left: -23rem;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
@@ -48,27 +50,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -11.5rem;
 
-  margin-left: -7.5rem;
+  &__list {
+    padding: 0.8rem 0 0.8rem 0;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+
+  // &__list:hover {
+  //   background-color: $color-primary-dark;
+  //   border-radius: 4px;
+  //}
+
+  &__list:before {
+    content: '';
+    background-color: $color-secondary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // width: 10rem;
+    // height: 2.5rem;
+    // transform: translateX(-100%) rotate(45deg);
+    // transition: all 0.3s;
+    border-radius: 2px;
+    background-color: $color-primary-dark;
+    // transform: translateY(100%);
+    transform: rotateX(90deg);
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  &__list:hover:before {
+    transform: translateY(0);
+    transform: rotateX(0deg);
+    //@warn: translateX(100%) rotate(45deg);
+  }
 
   &__list--link {
     text-decoration: none;
-    margin: 0 1rem 0 1rem;
+    margin: 0 1.3rem 0 1.3rem;
     color: $color-secondary;
-    transition: all 0.2s;
-  }
-
-  &__list--link:link,
-  &__list--link:visited {
-    padding: 1.2rem 0px;
-    border-bottom-style: 3px solid transparent;
-
-    &:hover,
-    &:active {
-      //color: $color-tertiary;
-      border-bottom: 3px solid $color-secondary;
-      border-radius: 0.05rem;
-    }
   }
 }
 
@@ -76,19 +101,29 @@
 .social {
   display: flex;
   align-items: center;
-  margin-right: -20rem;
+  margin-right: -23rem;
 
   &__icons {
     transition: transform 0.4s;
   }
 
   &__links {
-    width: 3rem;
-    height: 3rem;
+    width: 2.7rem;
+    height: auto;
 
     &:not(:last-child) {
       margin-right: 0.5rem;
     }
+  }
+
+  .instagram {
+    width: 2.75rem;
+    height: auto;
+  }
+
+  .facebook {
+    width: 2.9rem;
+    height: auto;
   }
 
   &__icons:hover,
