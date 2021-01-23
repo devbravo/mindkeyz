@@ -5,9 +5,9 @@ import { Download } from '@styled-icons/fa-solid/Download';
 const Guide = () => {
   return (
     <div className='guide'>
-      <span className='guide__container--1'>
+      {/* <span className='guide__container--1'>
         <h1>How it works</h1>
-      </span>
+      </span> */}
       <div className='guide_container--2'>
         <div className='guide__container'>
           <Audio className='guide__container--icon' />
@@ -20,7 +20,7 @@ const Guide = () => {
           <Paypal className='guide__container--icon' />
           <h2 className='guide__container--h2'>2. Securely Checkout</h2>
           <p className='guide__container--p'>
-            Next “Check out” and pay via PayPal
+            Next click “Check out” and pay via PayPal
           </p>
         </div>
         <div className='guide__container'>

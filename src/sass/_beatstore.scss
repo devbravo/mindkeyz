@@ -1,0 +1,16 @@
+.store {
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+  padding-left: 2rem;
+  background-color: $color-secondary-dark;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &__player {
+    border-radius: 2rem;
+    box-shadow: 0 1px 19px rgba(0, 0, 0, 0.18);
+    margin-top: -4.98rem;
+  }
+}
