@@ -4,7 +4,7 @@ $color-primary-light: rgb(121, 38, 255);
 $color-primary-light2: rgb(167, 112, 255);
 $color-primary-dark: rgb(102, 0, 255);
 $color-secondary: #fff;
-$color-secondary-dark: rgb(245, 245, 245);
+$color-secondary-dark: rgb(248, 249, 251);
 $color-tertiary: rgb(0, 0, 0);
 
 // FONT VARIABLES
@@ -37,8 +37,9 @@ body {
   grid-template-rows:
     [navbar-start] 1fr [navbar-end header-start]
     83rem [header-end howItworks-start] 26rem [howItworks-end store-start] minmax(
-      750px,
-      700px
-    );
+      75rem,
+      85rem
+    )
+    [store-end licensing-start] 80rem [licensing-end credit-start] 30rem;
   grid-template-columns: repeat(7, 1fr);
 }

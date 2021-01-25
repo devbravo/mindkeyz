@@ -8,7 +8,7 @@ const Store = () => {
         src='https://Mindkeyz.infinity.airbit.com?config_id=8072&embed=1'
         width='1000'
         height='750'
-        frameborder='0'
+        frameBorder='0'
         scrolling='no'></iframe>
     </div>
   );

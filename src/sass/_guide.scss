@@ -1,10 +1,12 @@
 .guide {
   grid-row: 3 / 4;
   grid-column: 1 / -1;
-  background-color: $color-secondary;
+  background-image: linear-gradient(
+    rgba($color-primary-dark, 1),
+    rgba($color-tertiary, 0.8)
+  );
   //background-color: rgba(3, 3, 8);
   box-shadow: 0 0.5rem 1rem rgba (199, 199, 199, 0.8);
-
   //color: rgba(7, 3, 8, 0.9);
   // &__container--1 {
   //   display: flex;
@@ -30,7 +32,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3);
     color: $color-secondary;
-    color: $color-tertiary;
+    //color: $color-tertiary;
 
     &--icon {
       width: 3rem;
@@ -53,9 +55,3 @@
     }
   }
 }
-
-// .empty-grid {
-//   grid-row: 3 / 4;
-//   grid-column: 1 / -1;
-//   background-color: rgb(199, 199, 199);
-// }

@@ -1,6 +1,6 @@
 import { ShoppingCart } from '@styled-icons/fa-solid/ShoppingCart';
 
-const Button = ({ send, className }) => {
+const Button = ({ send }) => {
   return (
     <div className='btn-beatstoreCart'>
       <a
