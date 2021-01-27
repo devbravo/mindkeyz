@@ -1,14 +1,14 @@
 const Card = ({ name, price, deal, licenses }) => {
   return (
-    <div className='container'>
-      <div className='container__header'>
-        <div className='container__header--title'>{name}</div>
-        <span className='container__header--price'>{price}</span>
-        <div className='container__header--deal'>{deal}</div>
+    <div className='card-container'>
+      <div className='card-container__header'>
+        <div className='card-container__header--title'>{name}</div>
+        <span className='card-container__header--price'>{price}</span>
+        <div className='card-container__header--deal'>{deal}</div>
       </div>
 
-      <div className='container__body'>
-        <ul className='container__body--list'>
+      <div className='card-container__body'>
+        <ul className='card-container__body--list'>
           {licenses.map(license => (
             <div key={license}>
               <li>{license}</li>
@@ -17,7 +17,7 @@ const Card = ({ name, price, deal, licenses }) => {
         </ul>
       </div>
 
-      <a className='container__btn' href='/#'>
+      <a className='card-container__btn' href='/#'>
         Download agreement
       </a>
     </div>

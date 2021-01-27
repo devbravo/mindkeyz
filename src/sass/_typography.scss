@@ -32,6 +32,7 @@
 }
 
 // Guide
+// ================
 .guide {
   h2 {
     font-size: 2.3rem;
@@ -42,7 +43,30 @@
   }
 }
 
+// Store
+// ===============
+.store__bar-under-player {
+  font-size: 1.3rem;
+
+  &--deals {
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    color: $color-primary-light2;
+  }
+}
+
+.bar-half-2 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+
+  strong {
+    color: $color-primary-light2;
+  }
+}
+
 // License Details
+// ===============
 .license-section__text {
   h3 {
     font-size: 2.5rem;
@@ -56,10 +80,12 @@
   }
 }
 
-.container {
+// License Section
+// ===============
+.card-container {
   &__header {
     &--title {
-      color: $color-primary-dark;
+      color: $color-primary-light2;
       font-size: 1.8rem;
       font-weight: 900;
       text-transform: uppercase;

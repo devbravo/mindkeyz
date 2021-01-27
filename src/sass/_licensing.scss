@@ -9,12 +9,6 @@
     margin: 6rem;
   }
 
-  &__h3 {
-  }
-
-  &__p {
-  }
-
   &__card {
     display: flex;
     justify-content: center;
@@ -22,15 +16,14 @@
   }
 }
 
-.container {
+.card-container {
   border-radius: 1.5rem;
   width: 20%;
-  border: 1px solid #ccc;
   margin: 0 0 5rem 2rem;
   box-shadow: 0 1px 2rem 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  transition: all 0.5s;
   padding-bottom: 2.8rem;
+  overflow: hidden;
+  transition: transform 0.5s;
 
   &:hover {
     transform: scale(1.05);
@@ -67,7 +60,7 @@
 
     &:hover {
       background-color: $color-secondary;
-      color: $color-primary-dark;
+      color: $color-primary-light;
     }
   }
 }
