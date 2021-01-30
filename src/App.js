@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Guide from './components/Guide';
 import Store from './components/store/Store';
 import LicenseSection from './components/license/LicenseSection';
-import Credit from './components/Credit';
+import Credit from './components/credit/Credit';
 
 function App() {
   return (

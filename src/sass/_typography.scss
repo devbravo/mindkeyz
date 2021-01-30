@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .mindkeyz__header {
   font-family: 'Xirod';
   font-weight: lighter;
@@ -69,14 +71,11 @@
 // ===============
 .license-section__text {
   h3 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding-bottom: 0.5rem;
+    @include sectionTextHeader;
   }
 
   p {
-    font-size: 1.5rem;
-    font-weight: 500;
+    @include sectionTextParagraph;
   }
 }
 
@@ -111,5 +110,19 @@
       font-weight: 600;
       text-transform: capitalize;
     }
+  }
+}
+
+// Credit Section
+.credit-section {
+  h3 {
+    @include sectionTextHeader;
+    text-transform: capitalize;
+    color: $color-tertiary;
+  }
+
+  p {
+    @include sectionTextParagraph;
+    color: $color-tertiary;
   }
 }
