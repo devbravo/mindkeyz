@@ -6,12 +6,14 @@ const Card = ({ property }) => {
 
   return (
     <div id={`card-${index}`} className='card'>
-      <img src={image} alt={name} className='images' />
-      <div className='details'>
-        <p className='name'>
+      <img src={image} alt={name} className='card__images' />
+      <div className='card__details'>
+        <p className='card__details--name'>
           {name}
           <br />
-          <a href={song_link}>{song}</a>
+          <a href={song_link} className='card__details--link'>
+            {song}
+          </a>
         </p>
       </div>
     </div>

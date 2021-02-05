@@ -1,7 +1,7 @@
 import Card from './Card';
 import { useState } from 'react';
 
-const LicenseSection = () => {
+const License = () => {
   const [basic] = useState([
     'Untagged mp3 file',
     'Instant download',
@@ -77,4 +77,4 @@ const LicenseSection = () => {
   );
 };
 
-export default LicenseSection;
+export default License;

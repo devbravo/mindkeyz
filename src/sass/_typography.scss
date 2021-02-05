@@ -49,21 +49,15 @@
 // ===============
 .store__bar-under-player {
   font-size: 1.3rem;
-
-  &--deals {
-    text-transform: uppercase;
-    margin-right: 0.5rem;
-    color: $color-primary-light2;
-  }
-}
-
-.bar-half-2 {
-  font-size: 1.3rem;
   text-transform: capitalize;
-  font-weight: 600;
 
-  strong {
-    color: $color-primary-light2;
+  .deal {
+    text-transform: uppercase;
+    @include barUnderPlayer;
+  }
+
+  .payment {
+    @include barUnderPlayer;
   }
 }
 

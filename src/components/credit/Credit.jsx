@@ -1,13 +1,20 @@
-import ImageSlider from './ImageSlider';
+import Carousel from './Carousel';
 
 const Credit = () => {
   return (
-    <div className='credit-section'>
+    <div
+      className='credit-section'
+      style={{
+        maxWidth: 1200,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        //marginTop: 64,
+      }}>
       <div className='credit-section__text'>
         <h3>Production credits</h3>
         <p>Who we worked with</p>
       </div>
-      <ImageSlider />
+      <Carousel />
     </div>
   );
 };

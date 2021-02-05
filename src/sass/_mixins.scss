@@ -19,3 +19,11 @@
   font-size: 1.6rem;
   font-weight: 500;
 }
+
+// Bar-Under-Player
+// ================= //
+@mixin barUnderPlayer {
+  font-weight: bolder;
+  margin-right: 0.5rem;
+  color: $color-primary-light2;
+}
