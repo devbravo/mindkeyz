@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({ property }) => {
-  const { index, image, name, song, song_link } = property;
+const Card = ({ data }) => {
+  const { index, image, name, song, song_link } = data;
 
   return (
     <div id={`card-${index}`} className='card'>
@@ -21,7 +21,7 @@ const Card = ({ property }) => {
 };
 
 Card.propTypes = {
-  property: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default Card;

@@ -16,14 +16,12 @@
   &__player {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    //overflow: hidden;
     box-shadow: 0 1px 19px rgba(0, 0, 0, 0.2);
   }
 
   &__bar-under-player {
     display: flex;
     justify-content: space-between;
-    //align-self: center;
     width: 78.3%;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;

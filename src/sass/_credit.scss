@@ -5,25 +5,15 @@
   text-align: center;
 }
 
-.slider {
-  //margin-top: 5rem;
-  //position: relative;
-  // height: 50vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-}
-
 .left-arrow,
 .right-arrow {
   color: $color-primary-dark;
   position: absolute;
   top: 50%;
   font-size: 3rem;
-  z-index: 10;
   cursor: pointer;
   user-select: none;
+  z-index: 1;
 }
 
 .left-arrow {
@@ -43,81 +33,80 @@
   flex-direction: column;
 }
 
-/* #region Card */
-/* Card */
-.card {
-  // border: 3px #f3f3f3 solid;
-  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
-  transition: all 0.3s linear;
-  cursor: pointer;
-  //background-color: #f3f3f3;
-  // max-width: 32rem;
-  // text-align: left;
-  //margin: 0 auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  //display: none;
+// Handles the white shadow on the sides
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 30.4rem;
 
-  padding: 8rem;
-
-  // &:hover {
-  //   background-color: #f3f3f3;
-  //   border-color: #f3f3f3;
-  // }
-
-  // img {
-  //   max-width: calc(100%);
-  //   margin: 0 auto;
-  //   display: block;
-  // }
-
-  &__details {
-    position: relative;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 5%,
+      rgba(255, 255, 255, 0) 15%
+    );
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 2;
   }
-  &__images {
-    width: 25rem;
-    height: 25rem;
-    margin-top: -5rem;
-    border-radius: 1.5rem;
-    //padding-right: 5rem;
+  &:after {
+    left: auto;
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 5%,
+      rgba(255, 255, 255, 0) 15%
+    );
   }
 }
 
-/* #endregion */
+.carousel-content-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 130%;
+
+  // boder for active property
+  &:after {
+    content: '';
+    display: block;
+    width: 26.6rem;
+    height: 26.6rem;
+
+    border: 5px solid $color-primary-light;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 12%;
+    left: 38.8%;
+  }
+}
 
 /* #region cards slider */
 .carousel-content {
   display: flex;
-  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
   scrollbar-width: none; /* hide scrollbar in Firefox */
 
-  // .card {
-  //   flex: 1;
-  //   min-width: 20rem;
-  //   opacity: 0.7;
-  //   transform: scale(0.8);
-  //   box-shadow: none;
-  //   background-color: white;
-  //   border-color: white;
-  //   transition: opacity 300ms linear, border-color 300ms linear,
-  //     background-color 300ms linear,
-  //     transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
-  //   &__images {
-  //     width: 25rem;
-  //     height: 25rem;
-  //     border-radius: 1.5rem;
-  //     //@include textgradient;
-  //   }
-
-  //   &__details {
-  //     opacity: 0;
-  //     transition: opacity 150ms linear;
-  //   }
-  // }
+  .card {
+    //flex: 1;
+    min-width: 15rem;
+    opacity: 0.7;
+    transform: scale(0.85);
+    box-shadow: none;
+    background-color: white;
+    border-color: white;
+    transition: opacity 300ms linear, border-color 300ms linear,
+      background-color 300ms linear,
+      transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
 }
-
 /* hide scrollbar in webkit browser */
 .carousel-content::-webkit-scrollbar,
 .carousel-content::-webkit-scrollbar {
@@ -130,125 +119,54 @@
   flex-grow: 1;
 }
 
-.carousel-content.show-1 > * {
+.carousel-content.show-2 > * {
   width: 50%;
 }
 
-.carousel-content.show-2 > * {
-  width: calc(100% / 2);
-}
-
 .carousel-content.show-3 > * {
-  width: calc(100% / 3);
+  width: calc(90% / 3);
 }
+
 .carousel-content.show-4 > * {
-  width: calc(100% / 4);
-}
-.carousel-content.show-5 > * {
-  width: calc(120% / 5);
+  width: calc(90% / 4);
 }
 
-// .carousel-content {
-//   display: flex;
-//   position: absolute;
-//   transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+/* #region Card */
+/* Card */
+.card {
+  border: 3px #f3f3f3 solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-//   .card {
-//     flex: 1;
-//     min-width: 20rem;
-//     opacity: 0.7;
-//     transform: scale(0.8);
-//     box-shadow: none;
-//     background-color: white;
-//     border-color: white;
-//     transition: opacity 300ms linear, border-color 300ms linear,
-//       background-color 300ms linear,
-//       transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  padding-top: 4rem;
+  position: relative;
+  left: 10.2%;
 
-//     &__images {
-//       width: 25rem;
-//       height: 25rem;
-//       border-radius: 1.5rem;
-//       //@include textgradient;
-//     }
+  &__details {
+    position: relative;
+  }
+  &__images {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+  }
+}
 
-//     &__details {
-//       opacity: 0;
-//       transition: opacity 150ms linear;
-//     }
-//   }
-// }
+/* #endregion */
 
 //Scales the active image
 $i: 0;
-@for $i from 0 through 8 {
+@for $i from 0 through 7 {
   .carousel-content-wrapper.active-slide-#{$i} #card-#{$i} {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.05);
     // background-color: #f3f3f3;
     // border-color: #f3f3f3;
     .details {
       opacity: 1;
     }
   }
-}
-// .carousel-wrapper {
-//   display: flex;
-//   width: 100%;
-//   position: relative;
-// }
-
-// Handles the white shadow on the sides
-.carousel-wrapper {
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 26.4rem;
-
-  // &:before,
-  // &:after {
-  //   content: '';
-  //   display: block;
-  //   width: 50%;
-  //   height: 100%;
-  //   background: linear-gradient(
-  //     to right,
-  //     rgba(255, 255, 255, 1) 10%,
-  //     rgba(255, 255, 255, 0) 35%
-  //   );
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 2;
-  // }
-  // &:after {
-  //   left: auto;
-  //   right: 0;
-  //   background: linear-gradient(
-  //     to left,
-  //     rgba(255, 255, 255, 1) 10%,
-  //     rgba(255, 255, 255, 0) 35%
-  //   );
-  // }
-}
-
-.carousel-content-wrapper {
-  overflow: hidden;
-  width: 100%;
-  height: 130%;
-  //position: relative;
-  // max-width: 22.6rem;
-  // margin: 0 auto;
-
-  // boder for active property
-  // &:after {
-  //   content: '';
-  //   display: block;
-  //   width: 100%;
-  //   height: 2.4rem;
-  //   outline: 5px solid #61dafb;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  // }
 }
