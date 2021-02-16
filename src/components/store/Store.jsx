@@ -3,7 +3,7 @@ import BarUnderPlayer from './BarUnderPlayer';
 const Store = () => {
   return (
     <div className='store-section'>
-      {/* <div className='store'>
+      <div className='store'>
         <iframe
           title='store'
           className='store__player'
@@ -14,7 +14,7 @@ const Store = () => {
           frameBorder='0'
           scrolling='no'></iframe>
         <BarUnderPlayer />
-      </div> */}
+      </div>
     </div>
   );
 };
