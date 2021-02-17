@@ -44,16 +44,16 @@
   }
 
   &__btn {
-    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     margin-right: 2rem;
     margin-left: 2rem;
-    display: block;
     text-align: center;
     border: 0.2rem solid $color-tertiary;
     padding: 1rem 0.8rem;
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-transform: capitalize;
+
     background-color: $color-tertiary;
     color: $color-secondary;
     transition: all 0.2s;
@@ -61,6 +61,20 @@
     &:hover {
       background-color: $color-secondary;
       color: $color-primary-light;
+    }
+
+    &--icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-left: -0.8rem;
+    }
+
+    &--link {
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: inherit;
     }
   }
 }

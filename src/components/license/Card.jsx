@@ -1,3 +1,5 @@
+import { Download } from '@styled-icons/heroicons-solid/Download';
+
 const Card = ({ name, price, deal, licenses }) => {
   return (
     <div className='card-container'>
@@ -16,10 +18,12 @@ const Card = ({ name, price, deal, licenses }) => {
           ))}
         </ul>
       </div>
-
-      <a className='card-container__btn' href='/#'>
-        Download agreement
-      </a>
+      <div className='card-container__btn'>
+        <Download className='card-container__btn--icon' />
+        <a className='card-container__btn--link' href='/#'>
+          Download agreement
+        </a>
+      </div>
     </div>
   );
 };
