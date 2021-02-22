@@ -120,3 +120,12 @@
     color: $color-tertiary;
   }
 }
+
+// Faq Section
+.faq-section {
+  h3 {
+    @include sectionTextHeader;
+    text-transform: capitalize;
+    color: $color-tertiary;
+  }
+}

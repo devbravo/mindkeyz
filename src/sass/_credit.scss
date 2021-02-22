@@ -1,7 +1,7 @@
 .credit-section {
   grid-row: 6 /7;
   grid-column: 1 / -1;
-  margin: 5rem 0 6rem 0;
+  margin: 5rem 0 0 0;
   text-align: center;
 }
 
@@ -80,10 +80,10 @@
     width: 28.8rem;
     height: 28.6rem;
 
-    border: 5px solid $color-primary-light;
+    border: 5px solid $color-secondary-darker;
     border-radius: 1.5rem;
     position: absolute;
-    top: 12%;
+    top: 11%;
     left: 37.8%;
     pointer-events: none;
   }
@@ -97,14 +97,16 @@
   scrollbar-width: none; /* hide scrollbar in Firefox */
 
   .card {
-    background-color: $color-primary-dark;
+    //background-color: $color-primary-dark;
     //flex: 1;
     min-width: 20rem;
     opacity: 0.7;
     transform: scale(0.85);
     box-shadow: none;
-    background-color: white;
-    border-color: white;
+    //background-color: white;
+    //border-color: white;
+
+    //box-shadow: 0 1px 2rem 0 rgba(0, 0, 0, 0.2);
     transition: opacity 300ms linear, border-color 300ms linear,
       background-color 300ms linear,
       transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -137,7 +139,7 @@
 /* #region Card */
 /* Card */
 .card {
-  border: 3px #f3f3f3 solid;
+  //border: 3px #f3f3f3 solid;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
   transition: all 0.3s linear;
   cursor: pointer;
@@ -165,35 +167,39 @@
       text-transform: capitalize;
     }
 
+    // Button for song link on YouTube
+
     &--btn {
       position: absolute;
-      background-color: $color-primary-dark;
+      color: $color-tertiary;
+      background-color: $color-secondary;
       margin-top: -7rem;
       margin-left: -0.4rem;
-      width: 20.6rem;
+      width: 16.6rem;
+      //border: 0.2rem solid $color-tertiary;
       border-radius: 0.6rem;
 
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1.2rem 0rem;
+      padding: 1rem 0rem;
       transition: all 0.2s;
 
       &:hover {
-        background-color: $color-tertiary;
-        color: $color-secondary;
+        background-color: $color-secondary;
+        color: $color-primary-light;
       }
     }
 
     &--icons {
       width: 2.3rem;
       height: 2.3rem;
-      color: $color-secondary;
+      color: inherit;
       margin-right: 1rem;
     }
 
     &--link {
-      color: $color-secondary;
+      color: inherit;
       text-decoration: none;
       text-align: center;
       font-size: 1.5rem;
@@ -206,7 +212,8 @@
     width: 27rem;
     height: 26.95rem;
     border-radius: 1.5rem;
-    filter: sepia(0%) saturate(100%) brightness(80%) contrast(80%)
+    box-shadow: 0 1px 2rem 0 rgba(0, 0, 0, 0.6);
+    filter: sepia(0%) saturate(100%) brightness(100%) contrast(100%)
       hue-rotate(0deg);
     // filter: invert(1%) sepia(90%) saturate(20%) hue-rotate(268deg)
     //   brightness(80%) contrast(80%);

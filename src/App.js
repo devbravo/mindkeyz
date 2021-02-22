@@ -5,6 +5,7 @@ import Guide from './components/utilities/Guide';
 import Store from './components/store/Store';
 import License from './components/license/License';
 import Credit from './components/credit/Credit';
+import Faq from './components/faq/Faq';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Store />
       <License />
       <Credit />
+      <Faq />
     </div>
   );
 }

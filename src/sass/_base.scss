@@ -5,6 +5,7 @@ $color-primary-light2: rgb(167, 112, 255);
 $color-primary-dark: rgb(102, 0, 255);
 $color-secondary: #fff;
 $color-secondary-dark: rgb(248, 249, 251);
+$color-secondary-darker: rgb(224, 225, 228);
 $color-tertiary: #101010;
 
 // FONT VARIABLES
@@ -40,6 +41,6 @@ body {
       75rem,
       85rem
     )
-    [store-end licensing-start] 82rem [licensing-end credit-start] 80rem;
+    [store-end licensing-start] 82rem [licensing-end credit-start] 65rem [credit-end faq-start] 70rem [faq-end];
   grid-template-columns: repeat(7, 1fr);
 }
