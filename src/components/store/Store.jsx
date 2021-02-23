@@ -2,7 +2,7 @@ import BarUnderPlayer from './BarUnderPlayer';
 
 const Store = () => {
   return (
-    <div className='store-section'>
+    <div data-test='store' className='store-section'>
       <div className='store'>
         <iframe
           title='store'

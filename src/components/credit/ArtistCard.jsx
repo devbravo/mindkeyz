@@ -2,7 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Youtube } from '@styled-icons/boxicons-logos/Youtube';
 
-const Card = ({ data, current }) => {
+/**
+ * Functional react component for rendering Artist cards.
+ * @function
+ * @param {object} props - React props.
+ * @returns {JSX.Element} - Rendered component
+ */
+
+const ArtistCard = ({ data, current }) => {
   const { index, image, name, song, song_link } = data;
 
   return (
@@ -28,8 +35,8 @@ const Card = ({ data, current }) => {
   );
 };
 
-Card.propTypes = {
+ArtistCard.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default Card;
+export default ArtistCard;

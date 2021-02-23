@@ -9,7 +9,7 @@ import Faq from './components/faq/Faq';
 
 function App() {
   return (
-    <div className='App'>
+    <div data-testid='app-component' className='App'>
       <Navbar />
       <Header />
       <Guide />

@@ -1,6 +1,14 @@
 import { Download } from '@styled-icons/heroicons-solid/Download';
+import { PropTypes } from 'prop-types';
 
-const Card = ({ name, price, deal, licenses }) => {
+/**
+ * Functional react component for rendering licensing cards.
+ * @function
+ * @param {object} props - React props.
+ * @returns {JSX.Element} - Rendered component
+ */
+
+const LicenseCard = ({ name, price, deal, licenses }) => {
   return (
     <div className='card-container'>
       <div className='card-container__header'>
@@ -28,4 +36,11 @@ const Card = ({ name, price, deal, licenses }) => {
   );
 };
 
-export default Card;
+LicenseCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  deal: PropTypes.string.isRequired,
+  licenses: PropTypes.array.isRequired,
+};
+
+export default LicenseCard;

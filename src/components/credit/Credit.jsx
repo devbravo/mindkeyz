@@ -3,6 +3,7 @@ import Carousel from './Carousel';
 const Credit = () => {
   return (
     <div
+      data-test='credit-component'
       className='credit-section'
       style={{
         maxWidth: 1200,

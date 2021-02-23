@@ -1,8 +1,7 @@
-import Card from './Card';
-import { useState } from 'react';
+import LicenseCard from './LicenseCard';
 
 const License = () => {
-  const [basic] = useState([
+  const basic = [
     'Untagged mp3 file',
     'Instant download',
     'No Sales',
@@ -10,8 +9,8 @@ const License = () => {
     'Video views 5k',
     'No radio / tv airplay',
     'No ownership of the beat',
-  ]);
-  const [premium] = useState([
+  ];
+  const premium = [
     'Untagged mp3 / wav files',
     'Instant download',
     'Sales up to 10K',
@@ -19,8 +18,8 @@ const License = () => {
     'Video views up to 100k',
     'Radio / tv airplay',
     'No ownership of the beat',
-  ]);
-  const [ultimate] = useState([
+  ];
+  const ultimate = [
     'Untagged mp3 / wav / trackout files',
     'Instant download',
     'Unlimited sales',
@@ -28,8 +27,8 @@ const License = () => {
     'Unlimited Video views',
     'Radio / tv airplay',
     'No ownership of the beat',
-  ]);
-  const [exclusive] = useState([
+  ];
+  const exclusive = [
     'Untagged mp3 / Wav / trackout files ',
     'Instant download',
     'Unlimited sales',
@@ -37,7 +36,7 @@ const License = () => {
     'Unlimited video views',
     'Radio / tv airplay',
     'Full ownership',
-  ]);
+  ];
 
   return (
     <div className='license-section'>
@@ -48,25 +47,25 @@ const License = () => {
         </p>
       </div>
       <div className='license-section__card'>
-        <Card
+        <LicenseCard
           name='basic license'
           price='$30'
           deal='Buy 2 get 1 free'
           licenses={basic}
         />
-        <Card
+        <LicenseCard
           name='premium license'
           price='$50'
           deal='Buy 2 get 1 free'
           licenses={premium}
         />
-        <Card
+        <LicenseCard
           name='ultimate license'
           price='$150'
           deal='Buy 2 get 1 free'
           licenses={ultimate}
         />
-        <Card
+        <LicenseCard
           name='exclusive rights'
           price='$500+'
           deal={'---'}
