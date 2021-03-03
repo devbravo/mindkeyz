@@ -9,7 +9,7 @@ import Plumpy from '../../images/artist/Plumpy.JPG';
 
 const images = [Kwesi, Shatta, Ambush, Banks, Jahllano, Swanny, Plumpy, Zerka];
 
-const ArtistData = [
+export const ArtistData = [
   {
     index: 0,
     name: 'Kwesi Arthur',
@@ -69,5 +69,3 @@ const ArtistData = [
     image: images[7],
   },
 ];
-
-export default ArtistData;
