@@ -1,10 +1,11 @@
 import { ShoppingCart } from '@styled-icons/fa-solid/ShoppingCart';
 
-const Button = ({ send }) => {
+const Button = () => {
   return (
-    <div className='btn-beatstoreCart'>
+    <div data-test='button-component' className='btn-beatstoreCart'>
       <a
-        href={send}
+        data-test='button-link'
+        href='www.airbit.com'
         target='_blank'
         rel='noreferrer'
         className='btn btn--white btn--animated btn-storeCart__beatstore'>

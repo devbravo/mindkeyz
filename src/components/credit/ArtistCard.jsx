@@ -37,6 +37,7 @@ const ArtistCard = ({ data, current }) => {
 
 ArtistCard.propTypes = {
   data: PropTypes.object.isRequired,
+  current: PropTypes.number.isRequired,
 };
 
 export default ArtistCard;

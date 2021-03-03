@@ -4,7 +4,7 @@ import { Download } from '@styled-icons/fa-solid/Download';
 
 const Guide = () => {
   return (
-    <div className='guide'>
+    <div data-test='guide-component' className='guide'>
       {/* <span className='guide__container--1'>
         <h1>How it works</h1>
       </span> */}

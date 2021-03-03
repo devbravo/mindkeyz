@@ -39,7 +39,7 @@ const License = () => {
   ];
 
   return (
-    <div className='license-section'>
+    <div data-test='license-component' className='license-section'>
       <div className='license-section__text'>
         <h3 className='license-section__h3'>Licensing Info</h3>
         <p className='license-section__p'>
@@ -48,25 +48,25 @@ const License = () => {
       </div>
       <div className='license-section__card'>
         <LicenseCard
-          name='basic license'
+          licenseName='basic license'
           price='$30'
           deal='Buy 2 get 1 free'
           licenses={basic}
         />
         <LicenseCard
-          name='premium license'
+          licenseName='premium license'
           price='$50'
           deal='Buy 2 get 1 free'
           licenses={premium}
         />
         <LicenseCard
-          name='ultimate license'
+          licenseName='ultimate license'
           price='$150'
           deal='Buy 2 get 1 free'
           licenses={ultimate}
         />
         <LicenseCard
-          name='exclusive rights'
+          licenseName='exclusive rights'
           price='$500+'
           deal={'---'}
           licenses={exclusive}

@@ -12,7 +12,9 @@ const Navbar = () => {
   window.addEventListener('scroll', changeNavBackground);
 
   return (
-    <div className={navbar ? 'navbar active' : 'navbar'}>
+    <div
+      data-test='navbar-component'
+      className={navbar ? 'navbar active' : 'navbar'}>
       <a href='www.mindkeyz.com' className='mindkeyz'>
         <h3 className='mindkeyz__header'>MINDKEYZ</h3>
       </a>

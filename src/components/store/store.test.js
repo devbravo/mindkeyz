@@ -1,19 +1,18 @@
 import { shallow } from 'enzyme';
 import { findByTestAttr } from '../../../test/testUtils';
 import Store from './Store';
+import BarUnderPlayer from './BarUnderPlayer';
 
-/**
- * Factory function to create a ShallowWrapper for the Credit component.
- * @function setup
- * @returns {ShallowWrapper}
- */
+describe('renders two components', () => {
+  test('renders store without error', () => {
+    const wrapper = shallow(<Store />);
+    const store = findByTestAttr(wrapper, 'store-component');
+    expect(store.length).toBe(1);
+  });
 
-const setup = () => {
-  return shallow(<Store />);
-};
-
-test('Renders without error', () => {
-  const wrapper = setup();
-  const store = findByTestAttr(wrapper, 'store');
-  expect(store.length).toBe(1);
+  test('renders barunderPlayer without error', () => {
+    const wrapper = shallow(<BarUnderPlayer />);
+    const store = findByTestAttr(wrapper, 'barUnderPlayer-component');
+    expect(store.length).toBe(1);
+  });
 });

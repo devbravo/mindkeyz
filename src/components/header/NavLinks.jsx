@@ -2,7 +2,7 @@ const NavLinks = () => {
   const links = ['Home', 'Services', 'About', 'Contact'];
 
   return (
-    <nav>
+    <nav data-test='navlink-component'>
       <ul className='nav'>
         {links.map(link => (
           <li key={link} className='nav__list'>

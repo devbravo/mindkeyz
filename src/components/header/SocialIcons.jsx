@@ -5,7 +5,7 @@ import { SocialFacebookCircular } from '@styled-icons/typicons/SocialFacebookCir
 
 const SocialIcons = () => {
   return (
-    <div className='social'>
+    <div data-test='social-component' className='social'>
       <a
         href='https://www.youtube.com/channel/UC9jdJsG9Mlgf4g2dpogDQsQ'
         target='_blank'
