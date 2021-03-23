@@ -26,7 +26,7 @@ export const FaqData = [
     index: 4,
     question: `The difference between exclusive and non-exclusive?`,
     answer:
-      'With exclusive right the licensor (Mindkeyz) grants the licensee (you) the sole rights to exploit the song. However this does not mean that Mindkeyz have sold their copyright.',
+      'With exclusive rights the licensor (Mindkeyz) grants the licensee (you) the sole rights to exploit the song. However this does not mean that Mindkeyz have sold their copyright.',
   },
   {
     index: 5,
