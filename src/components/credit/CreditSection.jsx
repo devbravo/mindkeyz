@@ -1,6 +1,6 @@
 import Carousel from './Carousel';
 
-const Credit = () => {
+const CreditSection = () => {
   return (
     <div
       data-test='credit-component'
@@ -9,7 +9,6 @@ const Credit = () => {
         maxWidth: 1200,
         marginLeft: 'auto',
         marginRight: 'auto',
-        //marginTop: 64,
       }}>
       <div className='credit-section__text'>
         <h3>Production credits</h3>
@@ -20,4 +19,4 @@ const Credit = () => {
   );
 };
 
-export default Credit;
+export default CreditSection;

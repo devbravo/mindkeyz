@@ -1,6 +1,5 @@
 const NavLinks = () => {
   const links = ['Home', 'Services', 'About', 'Contact'];
-
   return (
     <nav data-test='navlink-component'>
       <ul className='nav'>

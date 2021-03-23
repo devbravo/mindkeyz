@@ -1,0 +1,58 @@
+export const LicenseData = [
+  {
+    licenseName: 'basic license',
+    price: '$30',
+    deal: 'Buy 2 get 1 free',
+    license: [
+      'Untagged mp3 file',
+      'Instant download',
+      'No Sales',
+      'No Streams',
+      'Video views 5k',
+      'No radio / tv airplay',
+      'No ownership of the beat',
+    ],
+  },
+  {
+    licenseName: 'premium license',
+    price: '$50',
+    deal: 'Buy 2 get 1 free',
+    license: [
+      'Untagged mp3 / wav files',
+      'Instant download',
+      'Sales up to 10K',
+      'Streams up to 100k',
+      'Video views up to 100k',
+      'Radio / tv airplay',
+      'No ownership of the beat',
+    ],
+  },
+  {
+    licenseName: 'ultimate license',
+    price: '$150',
+    deal: 'Buy 2 get 1 free',
+    license: [
+      'Untagged mp3 / wav / trackout files',
+      'Instant download',
+      'Unlimited sales',
+      'Unlimited Streams',
+      'Unlimited Video views',
+      'Radio / tv airplay',
+      'No ownership of the beat',
+    ],
+  },
+  {
+    licenseName: 'exclusive rights',
+    price: '$500+',
+    deal: '---',
+    license: [
+      'Untagged mp3 / Wav / trackout files ',
+      'Instant download',
+      'Unlimited sales',
+      'Unlimited Streams',
+      'Unlimited video views',
+      'Radio / tv airplay',
+      'Full ownership',
+    ],
+  },
+];

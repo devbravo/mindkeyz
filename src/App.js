@@ -1,22 +1,22 @@
 import './sass/App.scss';
 import Navbar from './components/header/NavBar';
-import Header from './components/header/Header';
-import Guide from './components/utilities/Guide';
+import HeaderSection from './components/header/HeaderSection';
+import GuideSection from './components/utilities/GuideSection';
 import Store from './components/store/Store';
-import License from './components/license/License';
-import Credit from './components/credit/Credit';
-import Faq from './components/faq/Faq';
+import LicenseSection from './components/license/LicenseSection';
+import CreditSection from './components/credit/CreditSection';
+import FaqSection from './components/faq/FaqSection';
 
 function App() {
   return (
     <div data-testid='app-component' className='App'>
       <Navbar />
-      <Header />
-      <Guide />
+      <HeaderSection />
+      <GuideSection />
       <Store />
-      <License />
-      <Credit />
-      <Faq />
+      <LicenseSection />
+      <CreditSection />
+      <FaqSection />
     </div>
   );
 }

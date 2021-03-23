@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../utilities/Button';
 
-const Header = () => {
+const HeaderSection = () => {
   return (
     <div data-test='header-component' className='header'>
       <div className='header__text-button'>
@@ -15,4 +15,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderSection;

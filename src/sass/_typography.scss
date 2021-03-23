@@ -128,4 +128,33 @@
     text-transform: capitalize;
     color: $color-tertiary;
   }
+
+  p {
+    @include sectionTextParagraph;
+    color: $color-tertiary;
+  }
+}
+
+.faq {
+  &__question {
+    font-size: 1.71rem;
+    font-weight: 700;
+  }
+
+  &__answer {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.faq-open {
+  &__question {
+    font-size: 1.71rem;
+    font-weight: 700;
+  }
+
+  &__answer {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }

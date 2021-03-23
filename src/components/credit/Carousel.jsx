@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import { ArtistData } from './Data';
+import { ArtistData } from '../../Data/ArtistData';
 import ArtistCard from './ArtistCard';
 
 const show = 4;

@@ -5,9 +5,6 @@ import { Download } from '@styled-icons/fa-solid/Download';
 const Guide = () => {
   return (
     <div data-test='guide-component' className='guide'>
-      {/* <span className='guide__container--1'>
-        <h1>How it works</h1>
-      </span> */}
       <div className='guide_container--2'>
         <div className='guide__container'>
           <Audio className='guide__container--icon' />

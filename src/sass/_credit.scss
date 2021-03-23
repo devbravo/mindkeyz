@@ -1,19 +1,22 @@
 .credit-section {
   grid-row: 6 /7;
   grid-column: 1 / -1;
-  margin: 5rem 0 0 0;
   text-align: center;
+
+  &__text {
+    text-align: center;
+    margin: 5rem 0 6rem 0;
+  }
 }
 
 .left-arrow,
 .right-arrow {
   color: $color-primary-dark;
   position: absolute;
-  top: 50%;
+  top: 40%;
   font-size: 3rem;
   cursor: pointer;
   user-select: none;
-  //z-index: 1;
 }
 
 .left-arrow {
@@ -39,7 +42,6 @@
   width: 100%;
   position: relative;
   height: 30.4rem;
-  //pointer-events: auto;
 
   &:before,
   &:after {
@@ -53,7 +55,7 @@
       rgba(255, 255, 255, 0) 15%
     );
     position: absolute;
-    top: 10%;
+    top: 0%;
     left: 0;
     z-index: 1;
   }
@@ -73,18 +75,18 @@
   width: 100%;
   height: 130%;
 
-  // boder for active property
+  // border for active property
   &:after {
     content: '';
     display: block;
     width: 28.8rem;
-    height: 28.6rem;
+    height: 28.2rem;
 
     border: 5px solid $color-secondary-darker;
     border-radius: 1.5rem;
     position: absolute;
-    top: 11%;
-    left: 37.8%;
+    top: -1.72%;
+    left: 37.9%;
     pointer-events: none;
   }
 }
@@ -97,16 +99,11 @@
   scrollbar-width: none; /* hide scrollbar in Firefox */
 
   .card {
-    //background-color: $color-primary-dark;
-    //flex: 1;
     min-width: 20rem;
     opacity: 0.7;
     transform: scale(0.85);
     box-shadow: none;
-    //background-color: white;
-    //border-color: white;
 
-    //box-shadow: 0 1px 2rem 0 rgba(0, 0, 0, 0.2);
     transition: opacity 300ms linear, border-color 300ms linear,
       background-color 300ms linear,
       transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -139,14 +136,13 @@
 /* #region Card */
 /* Card */
 .card {
-  //border: 3px #f3f3f3 solid;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
   transition: all 0.3s linear;
   cursor: pointer;
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  padding-top: 4rem;
+  //padding-top: 4rem;
   position: relative;
   left: 37.4%;
 
@@ -176,7 +172,6 @@
       margin-top: -7rem;
       margin-left: -0.4rem;
       width: 16.6rem;
-      //border: 0.2rem solid $color-tertiary;
       border-radius: 0.6rem;
 
       display: flex;
@@ -212,11 +207,9 @@
     width: 27rem;
     height: 26.95rem;
     border-radius: 1.5rem;
-    box-shadow: 0 1px 2rem 0 rgba(0, 0, 0, 0.6);
+    // box-shadow: 0 1px 1rem 0 rgba(0, 0, 0, 0.6);
     filter: sepia(0%) saturate(100%) brightness(100%) contrast(100%)
       hue-rotate(0deg);
-    // filter: invert(1%) sepia(90%) saturate(20%) hue-rotate(268deg)
-    //   brightness(80%) contrast(80%);
   }
 }
 
