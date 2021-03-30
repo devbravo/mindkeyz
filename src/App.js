@@ -6,6 +6,7 @@ import Store from './components/store/Store';
 import LicenseSection from './components/license/LicenseSection';
 import CreditSection from './components/credit/CreditSection';
 import FaqSection from './components/faq/FaqSection';
+import FooterSection from './components/footer/FooterSection';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <LicenseSection />
       <CreditSection />
       <FaqSection />
+      <FooterSection />
     </div>
   );
 }

@@ -1,0 +1,112 @@
+.footer-section {
+  grid-row: 8 / 9;
+  grid-column: 1 / -1;
+  background-color: $color-tertiary;
+
+  &__text {
+    text-align: center;
+    margin: 6rem 0 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+.newsLetterForm {
+  max-width: 85rem;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.input_newsLetter {
+  background-color: $color-tertiary-light;
+  //border: none;
+  color: $color-secondary;
+  margin-right: 1.3rem;
+  width: 22rem;
+  padding: 1.5rem;
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.submit_newsLetter {
+  background-color: $color-primary-dark;
+  border: none;
+  color: $color-secondary;
+  padding: 1.5rem 4.5rem;
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.submit_newsLetter:hover {
+  background-color: $color-primary-light;
+}
+
+.footer-divide-line {
+  //width: 100%;
+
+  border: 0.9px solid $color-tertiary-light;
+  margin: 5rem auto auto auto;
+  width: 100%;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border: 3px solid $color-primary-light;
+  //border-radius: 0.5rem;
+}
+
+input[type='submit']:focus {
+  outline: none;
+  border: 3px solid $color-primary-light;
+}
+
+.footer-section__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-weight: 600;
+}
+
+.adress {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 10rem 0 10rem;
+  font-size: 1.3rem;
+}
+
+.email {
+  display: flex;
+  margin-right: -10rem;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    color: $color-primary-light;
+  }
+
+  &__adress {
+    font-size: 1.3rem;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+  &__mindkeyz {
+    margin-left: 0.5rem;
+    color: $color-primary-light;
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { SocialInstagramCircular } from '@styled-icons/typicons/SocialInstagramCircular';
 import { SocialYoutubeCircular } from '@styled-icons/typicons/SocialYoutubeCircular';
 import { SocialFacebookCircular } from '@styled-icons/typicons/SocialFacebookCircular';
+// import { Soundcloud } from '@styled-icons/entypo-social/Soundcloud';
 
 const SocialIcons = () => {
   return (
@@ -33,6 +34,13 @@ const SocialIcons = () => {
           className='social__icons facebook'
         />
       </a>
+      {/* <a
+        href='https://soundcloud.com/mindkeyz'
+        target='_blank'
+        rel='noreferrer'
+        className='social__links'>
+        <Soundcloud fill='#fff' className='social__icons soundcloud' />
+      </a> */}
     </div>
   );
 };

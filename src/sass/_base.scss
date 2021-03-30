@@ -6,7 +6,7 @@ $color-primary-dark: rgb(102, 0, 255);
 $color-secondary: #fff;
 $color-secondary-dark: rgb(248, 249, 251);
 $color-secondary-darker: rgb(224, 225, 228);
-$color-tertiary: #101010;
+$color-tertiary: #0e0a11;
 $color-tertiary-light: #2b2b2b;
 $color-tertiary-lighter: #202020;
 
@@ -43,6 +43,6 @@ body {
       75rem,
       85rem
     )
-    [store-end licensing-start] 82rem [licensing-end credit-start] 60rem [credit-end faq-start] 100rem [faq-end];
+    [store-end licensing-start] 82rem [licensing-end credit-start] 60rem [credit-end faq-start] 70rem [faq-end footer-start] 43rem [footer-end];
   grid-template-columns: repeat(7, 1fr);
 }
