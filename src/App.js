@@ -1,4 +1,5 @@
 import './sass/App.scss';
+import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/header/NavBar';
 import HeaderSection from './components/header/HeaderSection';
 import GuideSection from './components/utilities/GuideSection';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div data-testid='app-component' className='App'>
       <Navbar />
+
       <HeaderSection />
       <GuideSection />
       <Store />
