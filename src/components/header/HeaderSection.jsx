@@ -3,7 +3,7 @@ import Button from '../utilities/Button';
 
 const HeaderSection = () => {
   return (
-    <div data-test='header-component' className='header'>
+    <div data-test='header-component' className='header' id='header'>
       <div className='header__text-button'>
         <h1 className='header__text--h1'>best dancehall & afrobeats online</h1>
         <h2 className='header__text--h2'>

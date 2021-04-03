@@ -1,4 +1,4 @@
-import { LicenseData } from '../../Data/LicenseData';
+import { LicenseData } from '../../data/LicenseData';
 import LicenseCard from './LicenseCard';
 
 const LicenseSection = () => {

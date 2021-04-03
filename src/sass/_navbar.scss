@@ -43,11 +43,11 @@
 // MAIN NAVIGATION
 .nav {
   list-style: none;
-
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: -11.5rem;
+  //gap: 0.2rem;
 
   &__list {
     padding: 0.8rem 0 0.8rem 0;
@@ -56,14 +56,26 @@
     overflow: hidden;
   }
 
-  &__list:before {
+  &__list--link.active:before {
     content: '';
-    background-color: $color-secondary;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    background-color: $color-primary-dark;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  &__list--link:not(.active):before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
     border-radius: 5px;
     background-color: $color-primary-dark;
     transform: rotateX(90deg);
@@ -71,7 +83,7 @@
     transition: all 0.5s;
   }
 
-  &__list:hover:before {
+  &__list--link:not(.active):hover:before {
     transform: translateY(0);
     transform: rotateX(0deg);
   }

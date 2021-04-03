@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import { ArtistData } from '../../Data/ArtistData';
+import { ArtistData } from '../../data/ArtistData';
 import ArtistCard from './ArtistCard';
 
 const show = 4;
@@ -24,7 +24,6 @@ const Carousel = () => {
   const prev = () => {
     if (currentIndex > 0) {
       setCurrentIndex(prevState => prevState - 1);
-      console.log(currentIndex);
     }
   };
 

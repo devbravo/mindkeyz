@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NavLinks from './NavLinks';
 import SocialIcons from './SocialIcons';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -15,9 +16,9 @@ const Navbar = () => {
     <div
       data-test='navbar-component'
       className={navbar ? 'navbar active' : 'navbar'}>
-      <a href='www.mindkeyz.com' className='mindkeyz'>
+      <Link className='mindkeyz' to='/ '>
         <h3 className='mindkeyz__header'>MINDKEYZ</h3>
-      </a>
+      </Link>
       <NavLinks />
       <SocialIcons />
     </div>
