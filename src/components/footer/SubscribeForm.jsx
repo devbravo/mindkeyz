@@ -8,6 +8,7 @@ const SubscribeForm = () => {
     event.preventDefault();
     alert(`Submitting name ${name}`);
   };
+
   return (
     <div className='newsLetterForm'>
       <form onSubmit={() => handleSubmit}>

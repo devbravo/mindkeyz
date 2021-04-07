@@ -35,14 +35,17 @@ body {
   line-height: 1.6;
 }
 
-.App {
+.home {
   display: grid;
   grid-template-rows:
-    [navbar-start] 1fr [navbar-end header-start]
-    83rem [header-end howItworks-start] 26rem [howItworks-end store-start] minmax(
+    [header-start] 83rem [header-end howItworks-start] 26rem [howItworks-end store-start] minmax(
       75rem,
       85rem
     )
-    [store-end licensing-start] 82rem [licensing-end credit-start] 60rem [credit-end faq-start] 70rem [faq-end footer-start] 43rem [footer-end];
+    [store-end licensing-start] 82rem [licensing-end credit-start] 60rem [credit-end faq-start] 70rem [faq-end];
   grid-template-columns: repeat(7, 1fr);
+}
+
+.services {
+  display: grid;
 }

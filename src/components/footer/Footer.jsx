@@ -2,7 +2,7 @@ import SubscribeForm from './SubscribeForm';
 import AdressInfo from './AdressInfo';
 import Copyright from './Copyright';
 
-const FooterSection = () => {
+const Footer = () => {
   return (
     <div className='footer-section'>
       <div className='footer-section__text'>
@@ -15,4 +15,4 @@ const FooterSection = () => {
   );
 };
 
-export default FooterSection;
+export default Footer;

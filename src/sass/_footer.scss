@@ -1,5 +1,5 @@
 .footer-section {
-  grid-row: 8 / 9;
+  grid-row: 3 / span 1;
   grid-column: 1 / -1;
   background-color: $color-tertiary;
 
@@ -21,7 +21,6 @@
 
 .input_newsLetter {
   background-color: $color-tertiary-light;
-  //border: none;
   color: $color-secondary;
   margin-right: 1.3rem;
   width: 22rem;
@@ -48,8 +47,6 @@
 }
 
 .footer-divide-line {
-  //width: 100%;
-
   border: 0.9px solid $color-tertiary-light;
   margin: 5rem auto auto auto;
   width: 100%;
@@ -58,7 +55,6 @@
 input[type='text']:focus {
   outline: none;
   border: 3px solid $color-primary-light;
-  //border-radius: 0.5rem;
 }
 
 input[type='submit']:focus {
