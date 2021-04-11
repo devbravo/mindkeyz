@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-function ChangeParam() {
+function GetParam() {
   const { id } = useParams();
 
   if (id !== undefined) {
@@ -8,4 +8,4 @@ function ChangeParam() {
   } else return false;
 }
 
-export default ChangeParam;
+export default GetParam;

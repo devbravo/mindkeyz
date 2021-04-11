@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 /**
  * Function that calculates if a user has scrolled pas a certain point.
@@ -10,13 +10,20 @@ import { useState } from 'react';
 function VisibleOnScroll(scrollLimit) {
   const [visibleComp, setVisibleComp] = useState(false);
 
-  const pastScrollLimit = () => {
+  const pastScrollLimit = useCallback(() => {
     window.scrollY >= scrollLimit
       ? setVisibleComp(true)
       : setVisibleComp(false);
-  };
+  }, [scrollLimit]);
 
-  window.addEventListener('scroll', pastScrollLimit);
+  useEffect(() => {
+    window.addEventListener('scroll', pastScrollLimit);
+
+    return () => {
+      window.addEventListener('scroll', pastScrollLimit);
+    };
+  }, [pastScrollLimit]);
+
   return visibleComp;
 }
 

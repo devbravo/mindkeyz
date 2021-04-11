@@ -4,12 +4,10 @@ import Faqs from './Faqs';
 
 const Accordion = () => {
   const [clicked, setClicked] = useState(null);
-  console.log(clicked);
 
-  const toggle = index => {
+  const handletoggle = index => {
     clicked === index ? setClicked(null) : setClicked(index);
   };
-  console.log(toggle);
 
   return (
     <div className='container'>
@@ -18,7 +16,7 @@ const Accordion = () => {
           <Faqs
             clicked={clicked}
             item={item}
-            toggle={toggle}
+            toggle={handletoggle}
             key={item.index}
           />
         ))}

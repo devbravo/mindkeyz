@@ -7,13 +7,16 @@ const show = 4;
 const infiniteLoop = true;
 
 const Carousel = () => {
-  const [data] = useState(ArtistData);
+  //const [data] = useState(ArtistData);
+  const data = ArtistData;
   const [currentIndex, setCurrentIndex] = useState(infiniteLoop ? show : 0);
-  const [length, setLength] = useState(ArtistData.length);
+  //const [length, setLength] = useState(ArtistData.length);
+  const length = ArtistData.length;
 
-  useEffect(() => {
-    setLength(ArtistData.length);
-  }, []);
+  // useEffect(() => {
+  //   setLength(ArtistData.length);
+  //   console.log('render');
+  // }, []);
 
   const next = () => {
     if (currentIndex < length - 1) {
