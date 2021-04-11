@@ -33,7 +33,12 @@ body {
   color: $color-secondary;
   font-weight: 700;
   line-height: 1.6;
+  //position: relative;
 }
+
+// .app {
+//   position: relative;
+// }
 
 .home {
   display: grid;
@@ -48,4 +53,6 @@ body {
 
 .services {
   display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }

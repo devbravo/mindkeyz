@@ -6,8 +6,8 @@ const Layout = props => {
   return (
     <div className='layout'>
       <Navbar />
-      <main className='home'>{props.children}</main>
-      <Footer />
+      <main>{props.children}</main>
+      {/* <Footer /> */}
     </div>
   );
 };

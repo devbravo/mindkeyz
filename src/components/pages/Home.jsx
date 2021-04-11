@@ -10,12 +10,14 @@ import Layout from '../layout/Layout';
 const Home = () => {
   return (
     <Layout>
-      <HeaderSection />
-      <GuideSection />
-      <Store />
-      <LicenseSection />
-      <CreditSection />
-      <FaqSection />
+      <div className='home'>
+        <HeaderSection />
+        <GuideSection />
+        <Store />
+        <LicenseSection />
+        <CreditSection />
+        <FaqSection />
+      </div>
     </Layout>
   );
 };

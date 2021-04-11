@@ -5,10 +5,9 @@
   top: 0;
   left: 0;
   padding: 2rem 2.8rem 2rem 2.8rem;
-  grid-area: 1 / 1 / span 1 / -1;
   display: flex;
   justify-content: space-evenly;
-
+  //background-color: $color-tertiary;
   z-index: 10;
 }
 

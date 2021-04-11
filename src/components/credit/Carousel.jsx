@@ -7,7 +7,7 @@ const show = 4;
 const infiniteLoop = true;
 
 const Carousel = () => {
-  const [data, setData] = useState(ArtistData);
+  const [data] = useState(ArtistData);
   const [currentIndex, setCurrentIndex] = useState(infiniteLoop ? show : 0);
   const [length, setLength] = useState(ArtistData.length);
 
