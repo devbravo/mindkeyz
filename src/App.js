@@ -13,11 +13,12 @@ function App() {
       <ScrollToTop />
       <Switch>
         <Route path='/ ' component={Home} />
-        <Route path='/:id' component={Services} />
+        <Route path='/services' component={Services} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
         <Redirect from='/' exact to='/ ' />
       </Switch>
+
       <ScrollUpBtn />
     </div>
   );

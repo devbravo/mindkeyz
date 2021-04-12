@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import HeaderSection from '../header/HeaderSection';
 import GuideSection from '../guide/GuideSection';
 import Store from '../store/Store';
